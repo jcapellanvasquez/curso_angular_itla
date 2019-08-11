@@ -3,17 +3,20 @@
     <div class="col">
       <!--The content below is only a placeholder and can be replaced.-->
       <h1>Hola {{nombre}}</h1>
-      <app-formulario [datos]="datos"></app-formulario>
-      <router-outlet></router-outlet>
+      <app-formulario-con-evento 
+      #form
+      (onSave)="save($event)"
+      ></app-formulario-con-evento>
+      <router-outlet></router-outlet> 
     </div>
     <div class="col">
       <app-lista [datos]="datos"></app-lista>
     </div>
-    <div class="col">
-      <app-lista [datos]="datos"></app-lista>
-    </div>
-    <div class="col">
-      <app-lista [datos]="datos"></app-lista>
+    
+  </div>
+  <div class="row">
+    <div class="col-4">
+        <button class="btn btn-block btn-primary" (click)="form.ver()">ver</button>
     </div>
   </div>
 </div>

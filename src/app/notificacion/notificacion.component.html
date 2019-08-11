@@ -1,0 +1,12 @@
+<div class="alert"
+[ngClass]="{
+    'alert-success': isSuccess,
+    'alert-warning': isWarning,
+    'alert-danger': isDanger
+}"
+>
+    <strong>{{titulo}}</strong><br>
+    <ng-content>
+        
+    </ng-content>
+</div>

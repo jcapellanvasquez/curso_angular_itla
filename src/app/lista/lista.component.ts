@@ -9,6 +9,8 @@ import {Persona} from './../structure/persona-model';
 export class ListaComponent implements OnInit {
 
   @Input() datos: Array<Persona> = [];
+  
+  public isEmpty: boolean =  false;
 
   constructor() {
 
@@ -29,6 +31,9 @@ export class ListaComponent implements OnInit {
     //   apellido:'perez',
     //   direccion:'santiago'
     // })
+
+    
+
   }
 
   ngOnInit() {
