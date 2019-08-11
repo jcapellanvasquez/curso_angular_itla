@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Persona} from './../structure/persona-model';
 
 @Component({
@@ -8,27 +8,27 @@ import {Persona} from './../structure/persona-model';
 })
 export class ListaComponent implements OnInit {
 
-  public datos:  Array<Persona> = [];
+  @Input() datos: Array<Persona> = [];
 
   constructor() {
 
-    this.datos.push({
-      nombre:'juan',
-      apellido:'perez',
-      direccion:'santiago'
-    })
+    // this.datos.push({
+    //   nombre:'juan',
+    //   apellido:'perez',
+    //   direccion:'santiago'
+    // })
     
-    this.datos.push({
-      nombre:'juan',
-      apellido:'perez',
-      direccion:'santiago'
-    })
+    // this.datos.push({
+    //   nombre:'juan',
+    //   apellido:'perez',
+    //   direccion:'santiago'
+    // })
     
-    this.datos.push({
-      nombre:'juan',
-      apellido:'perez',
-      direccion:'santiago'
-    })
+    // this.datos.push({
+    //   nombre:'juan',
+    //   apellido:'perez',
+    //   direccion:'santiago'
+    // })
   }
 
   ngOnInit() {

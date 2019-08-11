@@ -3,13 +3,17 @@
     <div class="col">
       <!--The content below is only a placeholder and can be replaced.-->
       <h1>Hola {{nombre}}</h1>
-      <app-formulario></app-formulario>
-      
-
+      <app-formulario [datos]="datos"></app-formulario>
       <router-outlet></router-outlet>
     </div>
     <div class="col">
-      <app-lista></app-lista>
+      <app-lista [datos]="datos"></app-lista>
+    </div>
+    <div class="col">
+      <app-lista [datos]="datos"></app-lista>
+    </div>
+    <div class="col">
+      <app-lista [datos]="datos"></app-lista>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Persona } from './structure/persona-model';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ejemplo1';
   public nombre: string ="Julio";
+
+  public datos: Array<Persona> = [];
 
 //<app-root></app-root>
 
