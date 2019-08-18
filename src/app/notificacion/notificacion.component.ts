@@ -17,8 +17,14 @@ export class NotificacionComponent implements OnInit {
   @Input()
   public titulo: string = "Exito!";
 
-  constructor() {
+  public now: Date = new Date();
 
+  public obj = {
+    prop:'prop',
+    attr:'attr',
+  };
+
+  constructor() {
 
   }
 

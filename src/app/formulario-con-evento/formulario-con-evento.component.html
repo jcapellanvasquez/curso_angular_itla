@@ -5,8 +5,12 @@
         [isSuccess]="false"
         [isWarning]="false"
         [titulo]="'Error'"
+        appNotificacion
 
-    >Una notificacion</app-notificacion>
+    >
+    <strong>Warninig!</strong>
+    <p class="text-primary">Ocurrio un error</p>
+</app-notificacion>
     <div class="form-group">
         <label class="control-form-label">Nombre:</label>
         <input class="form-control" name="nombre" [(ngModel)]="nombre" type="text" placeholder="nombre...">

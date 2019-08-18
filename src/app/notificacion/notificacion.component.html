@@ -5,8 +5,18 @@
     'alert-danger': isDanger
 }"
 >
-    <strong>{{titulo}}</strong><br>
-    <ng-content>
+    <ng-content select="strong">
         
     </ng-content>
+
+    <ng-content select="p.text-primary">
+        
+    </ng-content>
+    <br>
+    <small appNotificacion>{{this.now | date:'dd-MM-yyyy'}}</small>
+    <br>
+    <br>
+    <small>{{obj | json}}</small>
+    <br>
+    <small>{{'juan jose' | custom}}</small>
 </div>

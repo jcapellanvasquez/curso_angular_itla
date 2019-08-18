@@ -9,6 +9,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ListaComponent } from './lista/lista.component';
 import { FormularioConEventoComponent } from './formulario-con-evento/formulario-con-evento.component';
 import { NotificacionComponent } from './notificacion/notificacion.component';
+import { CustomPipe } from './custom.pipe';
+import { NotificacionDirective } from './notificacion.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NotificacionComponent } from './notificacion/notificacion.component';
     FormularioComponent,
     ListaComponent,
     FormularioConEventoComponent,
-    NotificacionComponent
+    NotificacionComponent,
+    CustomPipe,
+    NotificacionDirective
   ],
   imports: [
     BrowserModule,
